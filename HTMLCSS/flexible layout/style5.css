@@ -1,0 +1,420 @@
+/* -----------------------------------------------------------------------------
+GLOBAL STYLES
+Do not edit!
+----------------------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  section:nth-child(n + 2) {
+    border-top: 1px solid #eee;
+  }
+  
+  .flex-layout {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    border: 10px solid #ddd;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .a,
+  .b,
+  .c,
+  .d,
+  .e,
+  .f {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .a {
+    background: #e58e26;
+  }
+  
+  .b {
+    background: #e54926;
+  }
+  
+  .c {
+    background: #b71540;
+  }
+  
+  .d {
+    background: #0a3d62;
+  }
+  
+  .e {
+    background: #079992;
+  }
+  
+  .f {
+    background: #2b6125;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  Layout 1
+  Add the styles for the layout beneath this comment!
+  ----------------------------------------------------------------------------- */
+  
+  .layout-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 600px;
+    margin-bottom: 0 auto;
+  }
+  
+  
+  
+  .layout-1 .a {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+   
+  }
+  
+  
+  .layout-1 .b {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+  
+  }
+  
+  
+  .layout-1 .c {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+   
+  }
+  
+  
+  .layout-1 .d {
+   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+   
+  }
+  
+  
+  .layout-1 .e {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+    
+  }
+  
+  
+  .layout-1 .f {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+    
+  }
+  
+  
+  /* -----------------------------------------------------------------------------
+  Layout 2
+  Add the styles for the layout beneath this comment!
+  ----------------------------------------------------------------------------- */
+  
+  .layout-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 32%;
+    height: 600px;
+    margin-bottom: 0 auto;
+    flex-grow: 8;
+
+  }
+  
+  .layout-2 .a {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+    flex-grow: 8;
+  }
+  
+  .layout-2 .b {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+    flex-grow: 8;
+  }
+  
+  .layout-2 .c {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+    flex-grow: 8;
+  }
+  
+  .layout-2 .d {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+    flex-grow: 8;
+  }
+  
+  .layout-2 .e {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+    flex-grow: 8;
+  }
+  
+  .layout-2 .f {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 32%;
+    height: 290px;
+    margin-bottom: 0 auto;
+    flex-grow: 8;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  Layout 3
+  Add the styles for the layout beneath this comment!
+  ----------------------------------------------------------------------------- */
+  
+  .layout-3 {
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex: 0 32%;
+    height: 600px;
+    margin-bottom: 0 auto;
+    
+  }
+  
+  .layout-3 .a {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 8 1 100%;
+    height: 200px;
+    margin-bottom: 0 auto;
+  }
+  
+  .layout-3 .b {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3 1 35%;
+    height: 200px;
+    margin-bottom: 0 auto;
+    
+    
+    
+
+  }
+  
+  .layout-3 .c {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 5  1 65%;
+    height: 200px;
+    margin-bottom: 0 auto;
+    
+  }
+  
+  .layout-3 .d {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    flex: 8 1 100%;
+    height: 180px;
+    margin-bottom: 0 auto;
+    
+    }
+  
+ 
+  
+  /* -----------------------------------------------------------------------------
+  Layout 4
+  Add the styles for the layout beneath this comment!
+  ----------------------------------------------------------------------------- */
+  
+  .layout-4 {
+    display: flex;
+   
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 32%;
+    height: 600px;
+    margin-bottom: 0 auto;
+  }
+  
+  .layout-4 .a {
+    display: flex;
+    
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 580px;
+    margin-bottom: 0 auto;
+  }
+
+  
+  .layout-4 .b {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 580px;
+    margin-bottom: 0 auto;
+  }
+  
+  .layout-4 .c {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 580px;
+    margin-bottom: 0 auto;
+  }
+  
+  .layout-4 .d {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 580px;
+    margin-bottom: 0 auto;
+  }
+  
+  .layout-4 .e {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 580px;
+    margin-bottom: 0 auto;
+  }
+  
+  .layout-4 .f {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 0 32%;
+    height: 580px;
+    margin-bottom: 0 auto;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  Layout 5
+  Add the styles for the layout beneath this comment!
+  ----------------------------------------------------------------------------- */
+  
+  .layout-5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 32%;
+    height: 600px;
+    margin-bottom: 0 auto;
+  }
+  
+  .layout-5 .a {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3 1 50%;
+    height: 200px;
+    margin-bottom: 0 auto;
+    
+  }
+  
+  .layout-5 .b {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3 1 50%;
+    height: 200px;
+    margin-bottom: 0 auto;
+  }
+  
+  .layout-5 .c {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 8 1 100%;
+    height: 200px;
+    margin-bottom: 0 auto;
+   
+  }
+  
+  .layout-5 .d {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3 1 30%;
+    height: 200px;
+    margin-bottom: 0 auto;
+  }
+  
+  .layout-5 .e {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3 1 30%;
+    height: 200px;
+    margin-bottom: 0 auto;
+  }
+  
+  .layout-5 .f {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3 1 30%;
+    height: 200px;
+    margin-bottom: 0 auto;
+  }

@@ -1,0 +1,196 @@
+:root {
+  --ff-primary: Heebo, sans-serif;
+  --ff-secondary: Bungee, cursive;
+  --ff-accent: Bungee Shade, cursive;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+header {
+  background-image: url(mp.jpg);
+  background-size: 400px;
+  height: 200px;
+  background-position: bottom center;
+  background-blend-mode: overlay;
+  color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  font-size: 2em;
+  margin: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--ff-secondary);
+}
+
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-inline: auto;
+}
+
+.stacked {
+  display: grid;
+}
+
+.stacked > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.product-grid {
+  display: grid;
+  gap: 0.125rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.card {
+  aspect-ratio: 1 / 1.5;
+  /* border: 3px solid hotpink; */
+}
+
+.card__content {
+  background: white;
+  align-self: end;
+  margin: 0.5rem 0.5rem 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1);
+}
+
+.card__title {
+  font-size: 1.25rem;
+  line-height: 1.1;
+  color: palevioletred;
+}
+
+.card-author {
+  font-size: 1rem;
+    margin: 0;
+}
+
+.card-author-link {
+  text-decoration: none;
+  color: var(--body-text, palevioletred);
+}
+
+.card-author-link:hover {
+  color: var(--primary, purple);
+  text-decoration: underline;
+}
+
+.card__img {
+  width: 100%;
+  aspect-ratio: 1 / 1.25;
+  object-fit: cover;
+}
+
+@media (min-width: 60em) {
+  .card__img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .card.featured {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .card.featured .card__img {
+    aspect-ratio: 1 / 1.25;
+  }
+
+  .card.featured .card__title {
+    font-size: 1.75rem;
+  }
+}
+
+
+
+p.max-content {
+  width: max-content;
+}
+
+p.min-content {
+  width: min-content;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  width: 100%;
+  background-color: palevioletred;
+  text-align: center ;
+  height:8vh;
+}
+
+
+
+
+
+
+
